@@ -14,3 +14,11 @@ jobs:
     steps:
       - name: "Print Hello World"
         run: echo "hello world"
+
+  on-schedule:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "running on schedule"
+        run: echo"Running on schedule"
+
