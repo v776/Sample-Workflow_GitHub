@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "running on schedule"
-        run: echo"Running on schedule"
+        run: echo "Running on schedule"
 
